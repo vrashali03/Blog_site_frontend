@@ -101,10 +101,9 @@ div.post{
 }
 
 div.post div.content h3{
- background-color: #b08968;
   margin: 0px;
   font-size: 1.8rem;
-  padding-left: 10px;
+  padding-left: 0px;
   padding-bottom: 5px;
   border-radius: 5px;
   opacity: 90%;

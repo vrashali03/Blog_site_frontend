@@ -18,14 +18,11 @@ const CreatePost = () => {
     data.set("file", files[0]);
 
     event.preventDefault();
-    const response = await fetch(
-      `https://blog-website-backend-xq7j.onrender.com/post`,
-      {
-        method: "POST",
-        body: data,
-        credentials: "include",
-      }
-    );
+    const response = await fetch(`${BASE_URL}/post`, {
+      method: "POST",
+      body: data,
+      credentials: "include",
+    });
     if (response.ok) {
       setRedirect(true);
     }
